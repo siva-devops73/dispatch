@@ -8,7 +8,7 @@ pipeline {
 
       stage('Build') {
          steps {
-           sh 'go build'
+           sh 'go'
          }
       }
 
