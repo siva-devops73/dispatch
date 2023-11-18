@@ -8,7 +8,7 @@ pipeline {
 
       stage('Build') {
          steps {
-           sh 'dnf install'
+           sh 'dnf install golang'
          }
       }
 
