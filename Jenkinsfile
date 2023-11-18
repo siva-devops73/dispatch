@@ -8,7 +8,9 @@ pipeline {
 
       stage('Build') {
          steps {
+           sh 'go mod init dispatch'
            sh 'go get'
+           sh 'go build'
          }
       }
 
