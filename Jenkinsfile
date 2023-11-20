@@ -16,6 +16,7 @@ pipeline {
       stage('Unit Tests') {
          steps {
            echo 'Unit Tests'
+           // sh 'go test'
          }
       }
 
