@@ -23,7 +23,7 @@ pipeline {
       stage('Code Analysis') {
          steps {
            echo 'Code Analysis'
-           // sh 'sonar-scanner -Dsonar.host.url=http://172.31.83.68:9000 -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectKey=dispatch'
+           // sh 'sonar-scanner -Dsonar.host.url=http://172.31.30.244:9000 -Dsonar.login=admin -Dsonar.password=admin123 -Dsonar.projectKey=dispatch'
          }
       }
 
