@@ -4,4 +4,5 @@ WORKDIR       /app
 COPY          ./ /app
 RUN           go get
 RUN           go build
-ENTRYPOINT    ["dispatch"]
+COPY          run.sh .
+ENTRYPOINT    ["bash", "run.sh"]
