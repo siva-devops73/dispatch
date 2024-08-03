@@ -3,3 +3,10 @@ image:
 
 port: 8080
 component: dispatch
+
+serviceAccount:
+  create: true
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::904827379241:role/eks-prod-ssm-pm-role
+PARAMETERS: "AMQP_HOST,roboshop.prod.dispatch.amqp_host AMQP_USER,roboshop.prod.dispatch.amqp_user AMQP_PASS,roboshop.prod.dispatch.amqp_pass"
+
