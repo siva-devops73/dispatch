@@ -1,8 +1,7 @@
-FROM          golang
+FROM          golang:1.21
 RUN           mkdir /app
 WORKDIR       /app
 COPY          ./ /app
-RUN           go get
-RUN           go build
+RUN           go mod init dispatch ; go get ; go build
 COPY          run.sh .
 ENTRYPOINT    ["bash", "run.sh"]
